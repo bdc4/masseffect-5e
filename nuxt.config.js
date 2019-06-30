@@ -15,10 +15,10 @@ fs.readdirSync(`./static/data/races`).map(file => {
   const id = file.replace(/.md$/, '')
   routes.push(`/phb/races/${id}`)
 })
+*/
 fs.readdirSync('./static/data/changelog').map((file) => {
   routes.push('/changelog/' + (file.replace(/\.md$/g, '')))
 })
-*/
 
 
 module.exports = {
@@ -165,16 +165,6 @@ module.exports = {
       // v-runtime-template
       config.resolve.alias["vue"] = "vue/dist/vue.common"
 
-      // Frontmatter loader
-      /*
-      config.module.rules.push({
-        test: /\.md$/,
-        loader: 'frontmatter-markdown-loader',
-        options: {
-          vue: true
-        }
-      })
-      */
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

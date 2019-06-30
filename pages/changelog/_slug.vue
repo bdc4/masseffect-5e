@@ -2,10 +2,10 @@
   v-content.blue-grey.lighten-4
     v-container
       div.news-post
-        h1.display-3 {{ post.attributes.title }}
-        h2.subheading #[em {{ post.attributes.date | formatDate('DDDD, MMMM DD, YYYY') }}]
+        h1.display-3 {{ post.title }}
+        h2.subheading #[em {{ post.date | formatDate('DDDD, MMMM DD, YYYY') }}]
         div.markdown-content
-          markdown-content(:component="post.vue")
+          markdown-content(:source="post.html")
       v-btn(to="/changelog" nuxt).primary
         v-icon keyboard_arrow_left
         span Back to changelog
@@ -13,6 +13,9 @@
 
 <script>
   export default {
+    async fetch ({store}) {
+      await store.dispatch('getContent', {context: 'changelog'})
+    },
     data () {
       return {
         id: this.$route.params.slug
@@ -20,16 +23,14 @@
     },
     computed: {
       post () {
-        if (this.id) {
-          return require(`~/static/data/changelog/${this.id}.md`)
-        }
+        return this.$store.getters.getContent('changelog', this.id)
       }
     },
     head () {
       return {
-        title: `${this.post.attributes.title} - Changelog | Mass Effect 5e`,
+        title: `${this.post.title} - Changelog | Mass Effect 5e`,
         meta: [
-          { hid: 'description', name: 'description', content: this.post.attributes.description }
+          { hid: 'description', name: 'description', content: this.post.description }
         ]
       }
     }

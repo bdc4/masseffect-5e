@@ -1,6 +1,5 @@
 pages/spellcheck.vue
 
-pages/changelog/*
 pages/for-gms/*
 pages/phb/appendix/*
 pages/phb/armor/*

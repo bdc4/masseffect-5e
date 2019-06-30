@@ -1,6 +1,0 @@
-If this works, remove the following deps:
-
-  "devDependencies": {
-    "frontmatter-markdown-loader": "^1.5.0",
-    "markdown-it-meta": "0.0.1",
-  }

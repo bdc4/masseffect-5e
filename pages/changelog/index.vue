@@ -9,14 +9,16 @@
 </template>
 
 <script>
-  import items from '~/static/data/changelog'
   import PostCard from '~/components/cards/PostCard.vue'
 
   export default {
+    async fetch ({store}) {
+      await store.dispatch('getContent', {context: 'changelog'})
+    },
     components: { PostCard },
-    data () {
-      return {
-        items
+    computed: {
+      items () {
+        return this.$store.getters.content.changelog
       }
     },
     head () {
