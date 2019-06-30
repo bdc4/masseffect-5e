@@ -30,7 +30,7 @@
     computed: {
       item () {
         if (this.id) {
-          return require(`~/static/data/${this.itemType}/${this.id}.md`)
+          return ''
         }
       }
     }

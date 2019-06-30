@@ -12,7 +12,6 @@
 </template>
 
 <script>
-  import weaponProperties from '~/static/data/weapon_properties.json'
 
   export default {
     name: 'WeaponProp',

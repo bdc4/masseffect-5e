@@ -31,7 +31,6 @@
 <script>
 import SideNavigation from '~/components/SideNavigation.vue'
 import PhbToolbar from '~/components/PhbToolbar.vue'
-import rules from '~/static/data/rules'
 
 // State
 import {createNamespacedHelpers} from 'vuex'
@@ -48,7 +47,7 @@ export default {
       return this.pages[this.$route.name] ? this.pages[this.$route.name] : {}
     },
     rules () {
-      return rules.filter(rule => rule.section === this.page.rules)
+      return this.$store.getters.content.rules.filter(rule => rule.section === this.pages[this.$route.name].rules)
     },
     search: {
       get () {

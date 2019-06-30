@@ -3,6 +3,7 @@
  */
 const fs = require('fs')
 const fm = require('front-matter')
+const md = require('markdown-it')({html: true})
 const jsonDirs = ['classes', 'bestiary']
 const mdDirs = [
   'backgrounds',
@@ -24,7 +25,8 @@ for (let dir of mdDirs) {
 
   const items = files.map((file) => {
     const fc = fm(fs.readFileSync(`${path}/${file}`, 'utf8'))
-    let item = Object.assign(fc.attributes, {})
+    let item = {...fc.attributes, html: md.render(fc.body)}
+    item.id = file.replace(/.md$/, '')
     switch (dir) {
       case 'changelog':
         item.date = new Date(item.date)
@@ -37,9 +39,6 @@ for (let dir of mdDirs) {
         item.subSection = Number.parseInt(fileParts[1])
         item.id = file.replace(/\.md$/g, '')
         item.hash = fileParts.splice(2).join('-').replace(/\.md$/g, '')
-        break
-      case 'vehicles':
-        item.id = file.replace(/.md$/, '')
         break
       default:
         break

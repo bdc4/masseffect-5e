@@ -24,5 +24,29 @@ export default {
     { id: 'spell', textColor: 'purple--text', color: 'purple', icon: 'whatshot' },
     { id: 'bestiary', textColor: 'primary--text', color: 'primary', icon: 'pets' }
   ],
-  version: config.version
+  version: config.version,
+  isDev: true,
+  content: {
+    armodMods: null,
+    armorSets: null,
+    backgrounds: null,
+    bestiary: null,
+    changelog: null,
+    classFeatures: null,
+    classes: null,
+    conditions: null,
+    feats: null,
+    grenades: null,
+    programs: null,
+    races: null,
+    rules: null,
+    skills: null,
+    spells: null,
+    statsByCr: null,
+    tools: null,
+    vehicles: null,
+    weaponMods: null,
+    weaponProperties: null,
+    weapons: null
+  }
 }

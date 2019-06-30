@@ -20,5 +20,12 @@ export default {
   searchbar: state => state.searchbar,
   races: state => state.races,
   phbSearch: state => state.phbSearch,
-  searchFilters: state => state.searchFilters
+  searchFilters: state => state.searchFilters,
+  isDev: state => state.isDev,
+  content: state => state.content,
+  getContent: (state, getters) => (context, id) => {
+    if (Array.isArray(state.content[context])) {
+      return state.content[context].find(c => c.id === id)
+    }
+  }
 }

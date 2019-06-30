@@ -4,14 +4,11 @@
       v-chip(v-if="newRule" color="secondary" text-color="white" small) new
       v-chip(v-if="changeRule" color="orange accent-2" text-color="black" small) change
     v-card-text
-      markdown-content(:component="item.vue")
+      markdown-content(:source="item.html")
 </template>
 
 <script>
-  import MarkdownContent from '~/components/MarkdownContent.vue'
-
   export default {
-    components: {MarkdownContent},
     props: {
       id: {
         type: String,
@@ -20,16 +17,16 @@
     },
     computed: {
       item () {
-        return require(`~/static/data/rules/${this.id}.md`)
+        return this.$store.getters.getContent('rules', this.id)
       },
       title () {
-        return this.item.attributes.title
+        return this.item.title
       },
       newRule () {
-        return this.item.attributes.new
+        return this.item.new
       },
       changeRule () {
-        return this.item.attributes.change
+        return this.item.change
       },
       hash () {
         return this.id.split('-').splice(2).join('-')

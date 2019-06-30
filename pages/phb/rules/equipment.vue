@@ -7,10 +7,12 @@
 
 <script>
   import RuleCard from '~/components/RuleCard.vue'
-  import rules from '~/static/data/rules'
   import {mapGetters} from 'vuex'
 
   export default {
+    async fetch ({store}) {
+      await store.dispatch('getContent', {context: 'rules'})
+    },
     components: {RuleCard},
     computed: {
       ...mapGetters('phb', {
@@ -18,7 +20,7 @@
         pages: 'pages'
       }),
       rules () {
-        return rules.filter(rule => rule.section === this.pages[this.$route.name].rules)
+        return this.$store.getters.content.rules.filter(rule => rule.section === this.pages[this.$route.name].rules)
       },
       title () {
         return this.pages[this.$route.name].name

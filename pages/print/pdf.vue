@@ -308,7 +308,6 @@
   // Data
   import classes from '~/static/data/classes'
   import races from '~/static/data/races'
-  import rules from '~/static/data/rules'
   import backgrounds from '~/static/data/backgrounds'
   import feats from '~/static/data/feats'
   import weapons from '~/static/data/weapons'

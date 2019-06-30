@@ -108,7 +108,6 @@
 
 <script>
   import RuleCard from '~/components/cards/AltRuleCard.vue'
-  import mechanics from '~/static/data/armor_mechanics'
 
   export default {
     components: {RuleCard},

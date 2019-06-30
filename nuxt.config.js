@@ -4,7 +4,9 @@ const fs = require('fs')
 /*****
  * Dynamic Route Generation
  */
+
 const routes = []
+/*
 fs.readdirSync('./static/data/classes').map(file => {
   const id = file.replace(/.json$/, '')
   routes.push(`/phb/classes/${id}`)
@@ -16,6 +18,7 @@ fs.readdirSync(`./static/data/races`).map(file => {
 fs.readdirSync('./static/data/changelog').map((file) => {
   routes.push('/changelog/' + (file.replace(/\.md$/g, '')))
 })
+*/
 
 
 module.exports = {
@@ -80,7 +83,8 @@ module.exports = {
   modules: [
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/axios'
   ],
   'google-analytics': {
     id: 'UA-83740704-2',
@@ -99,6 +103,7 @@ module.exports = {
   ** Router Scroll behavior
   */
   router: {
+    middleware: 'isDev',
     scrollBehavior: (to, from, savedPosition) => {
       let position = false
 
@@ -153,7 +158,11 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+      // v-runtime-template
+      config.resolve.alias["vue"] = "vue/dist/vue.common"
+
       // Frontmatter loader
+      /*
       config.module.rules.push({
         test: /\.md$/,
         loader: 'frontmatter-markdown-loader',
@@ -161,6 +170,7 @@ module.exports = {
           vue: true
         }
       })
+      */
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

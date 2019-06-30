@@ -22,5 +22,11 @@ export default {
   },
   setPhbSearch(state, payload) {
     state.phbSearch = payload
+  },
+  setDev(state, payload) {
+    state.isDev = payload
+  },
+  setContent(state, payload) {
+    state.content[payload.context] = payload.content
   }
 }

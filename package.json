@@ -17,12 +17,14 @@
     "data": "node -r esm build-data.js"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "date-format-lite": "^17.7.0",
     "lunr": "^2.3.6",
     "nuxt": "^2.8.0",
+    "v-runtime-template": "^1.10.0",
     "vue2-filters": "^0.3.0",
     "vuetify": "^1.5.14",
     "vuetify-loader": "^1.0.8",
@@ -49,7 +51,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "front-matter": "^2.3.0",
-    "frontmatter-markdown-loader": "^1.5.0",
+    "markdown-it": "^8.4.2",
     "fs": "0.0.1-security",
     "jest": "^24.0.0",
     "lodash": "^4.17.11",
