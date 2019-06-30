@@ -1,5 +1,4 @@
 ---
-length: 0
 new: true
 title: Using these Rules
 ---

@@ -1,5 +1,4 @@
 ---
-length: 974
 title: 'Starting Equipment'
 ---
 

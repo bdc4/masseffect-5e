@@ -1,5 +1,4 @@
 ---
-length: 1237
 title: 'Thermal Clips'
 new: true
 ---

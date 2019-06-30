@@ -1,5 +1,4 @@
 ---
-length:
 title: 'Getting Monsters'
 ---
 ### Mass Effect 5e Bestiary

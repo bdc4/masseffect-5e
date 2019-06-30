@@ -1,5 +1,4 @@
 ---
-length: 8266
 title: How to Play
 ---
 

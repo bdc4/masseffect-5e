@@ -1,5 +1,4 @@
 ---
-length: 1208
 new: true
 title: About the Player's Manual
 ---

@@ -1,5 +1,4 @@
 ---
-length: 5158
 title: 'Weapons'
 change: true
 ---

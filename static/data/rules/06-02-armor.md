@@ -1,5 +1,4 @@
 ---
-length: 7139
 title: 'Armor'
 change: true
 ---

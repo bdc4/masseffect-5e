@@ -1,5 +1,4 @@
 ---
-length: 3007
 new: true
 title: A Universe to Explore
 ---

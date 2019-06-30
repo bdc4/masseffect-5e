@@ -1,5 +1,4 @@
 ---
-length: 1284
 title: 'Medi-gel'
 new: true
 ---

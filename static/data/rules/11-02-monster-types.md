@@ -1,5 +1,4 @@
 ---
-length:
 title: 'Monster Types'
 change: true
 ---

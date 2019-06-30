@@ -1,5 +1,4 @@
 ---
-length:
 title: 'Custom Armor'
 new: true
 ---
