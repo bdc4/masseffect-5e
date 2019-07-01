@@ -27,6 +27,9 @@ export default {
     state.isDev = payload
   },
   setContent(state, payload) {
-    state.content[payload.context] = payload.content
+    if (!state.content[payload.lang]) {
+      state.content[payload.lang] = {}
+    }
+    state.content[payload.lang][payload.context] = payload.content
   }
 }

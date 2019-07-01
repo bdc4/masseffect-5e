@@ -24,6 +24,7 @@ export default {
   isDev: state => state.isDev,
   content: state => state.content,
   getContent: (state, getters) => (context, id) => {
+    // TODO: if content doesn't exist, get from english and add translate tag
     if (Array.isArray(state.content[context])) {
       return state.content[context].find(c => c.id === id)
     }

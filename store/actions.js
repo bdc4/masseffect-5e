@@ -1,11 +1,11 @@
 export default {
-  async getContent ({getters, commit}, {context}) {
-    if (!getters.content[context]) {
+  async getContent ({getters, commit}, {lang, context}) {
+    if (!getters.content[lang] && !getters.content[lang][context]) {
       // TODO: can this be relative after build
       const domain = getters.isDev ? 'http://localhost:3000' : 'http://localhost:8000'
-      const url = `${domain}/data/${context}.json`
+      const url = `${domain}/data/${lang}/${context}.json`
       const data = await this.$axios.$get(url)
-      commit('setContent', {content: data, context})
+      commit('setContent', {content: data, lang, context})
     }
   },
   addBookmark ({commit}, payload) {

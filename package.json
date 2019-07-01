@@ -24,6 +24,7 @@
     "date-format-lite": "^17.7.0",
     "lunr": "^2.3.6",
     "nuxt": "^2.8.0",
+    "nuxt-i18n": "^5.12.7",
     "v-runtime-template": "^1.10.0",
     "vue2-filters": "^0.3.0",
     "vuetify": "^1.5.14",

@@ -88,8 +88,16 @@ module.exports = {
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-i18n'
   ],
+  i18n: {
+    locales: ['en', 'ru'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
+  },
   'google-analytics': {
     id: 'UA-83740704-2',
     autoTracking: {

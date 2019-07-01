@@ -26,27 +26,5 @@ export default {
   ],
   version: config.version,
   isDev: true,
-  content: {
-    armodMods: null,
-    armorSets: null,
-    backgrounds: null,
-    bestiary: null,
-    changelog: null,
-    classFeatures: null,
-    classes: null,
-    conditions: null,
-    feats: null,
-    grenades: null,
-    programs: null,
-    races: null,
-    rules: null,
-    skills: null,
-    spells: null,
-    statsByCr: null,
-    tools: null,
-    vehicles: null,
-    weaponMods: null,
-    weaponProperties: null,
-    weapons: null
-  }
+  content: {}
 }
