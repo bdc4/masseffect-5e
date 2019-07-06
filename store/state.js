@@ -25,6 +25,7 @@ export default {
     { id: 'bestiary', textColor: 'primary--text', color: 'primary', icon: 'pets' }
   ],
   version: config.version,
+  changelog: [],
   isDev: true,
   content: {}
 }

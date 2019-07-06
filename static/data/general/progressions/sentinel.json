@@ -1,0 +1,259 @@
+[
+  {
+    "level": 1,
+    "proficiencyBonus": 2,
+    "features": [
+      "tech_armor",
+      "barrier"
+    ],
+    "barrierUses": 2,
+    "barrierTicks": 3,
+    "cantrips": 2,
+    "spellsKnown": 2,
+    "spellSlots": 1,
+    "spellLevel": 1
+  },
+  {
+    "level": 2,
+    "proficiencyBonus": 2,
+    "features": [
+      "fighting_style"
+    ],
+    "barrierUses": 2,
+    "barrierTicks": 3,
+    "cantrips": 2,
+    "spellsKnown": 3,
+    "spellSlots": 2,
+    "spellLevel": 1
+  },
+  {
+    "level": 3,
+    "proficiencyBonus": 2,
+    "features": [
+      "subclass"
+    ],
+    "barrierUses": 3,
+    "barrierTicks": 3,
+    "cantrips": 2,
+    "spellsKnown": 4,
+    "spellSlots": 2,
+    "spellLevel": 1
+  },
+  {
+    "level": 4,
+    "proficiencyBonus": 2,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "barrierUses": 3,
+    "barrierTicks": 3,
+    "cantrips": 3,
+    "spellsKnown": 5,
+    "spellSlots": 2,
+    "spellLevel": 1
+  },
+  {
+    "level": 5,
+    "proficiencyBonus": 3,
+    "features": [],
+    "barrierUses": 3,
+    "barrierTicks": 4,
+    "cantrips": 3,
+    "spellsKnown": 6,
+    "spellSlots": 2,
+    "spellLevel": 2
+  },
+  {
+    "level": 6,
+    "proficiencyBonus": 3,
+    "features": [
+      "quick_cast"
+    ],
+    "barrierUses": 4,
+    "barrierTicks": 4,
+    "cantrips": 3,
+    "spellsKnown": 7,
+    "spellSlots": 2,
+    "spellLevel": 2
+  },
+  {
+    "level": 7,
+    "proficiencyBonus": 3,
+    "features": [
+      "subclass"
+    ],
+    "barrierUses": 4,
+    "barrierTicks": 4,
+    "cantrips": 3,
+    "spellsKnown": 8,
+    "spellSlots": 2,
+    "spellLevel": 2
+  },
+  {
+    "level": 8,
+    "proficiencyBonus": 3,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "barrierUses": 4,
+    "barrierTicks": 4,
+    "cantrips": 3,
+    "spellsKnown": 9,
+    "spellSlots": 2,
+    "spellLevel": 2
+  },
+  {
+    "level": 9,
+    "proficiencyBonus": 4,
+    "features": [],
+    "barrierUses": 4,
+    "barrierTicks": 5,
+    "cantrips": 3,
+    "spellsKnown": 10,
+    "spellSlots": 2,
+    "spellLevel": 3
+  },
+  {
+    "level": 10,
+    "proficiencyBonus": 4,
+    "features": [
+      "subclass"
+    ],
+    "barrierUses": 4,
+    "barrierTicks": 5,
+    "cantrips": 4,
+    "spellsKnown": 10,
+    "spellSlots": 2,
+    "spellLevel": 3
+  },
+  {
+    "level": 11,
+    "proficiencyBonus": 4,
+    "features": [
+      "l5t_1"
+    ],
+    "barrierUses": 4,
+    "barrierTicks": 5,
+    "cantrips": 4,
+    "spellsKnown": 11,
+    "spellSlots": 3,
+    "spellLevel": 3
+  },
+  {
+    "level": 12,
+    "proficiencyBonus": 4,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "barrierUses": 5,
+    "barrierTicks": 5,
+    "cantrips": 4,
+    "spellsKnown": 11,
+    "spellSlots": 3,
+    "spellLevel": 3
+  },
+  {
+    "level": 13,
+    "proficiencyBonus": 5,
+    "features": [
+      "l5t_2"
+    ],
+    "barrierUses": 5,
+    "barrierTicks": 6,
+    "cantrips": 4,
+    "spellsKnown": 12,
+    "spellSlots": 3,
+    "spellLevel": 3
+  },
+  {
+    "level": 14,
+    "proficiencyBonus": 5,
+    "features": [
+      "subclass"
+    ],
+    "barrierUses": 5,
+    "barrierTicks": 6,
+    "cantrips": 4,
+    "spellsKnown": 12,
+    "spellSlots": 3,
+    "spellLevel": 3
+  },
+  {
+    "level": 15,
+    "proficiencyBonus": 5,
+    "features": [
+      "l5t_3"
+    ],
+    "barrierUses": 5,
+    "barrierTicks": 6,
+    "cantrips": 4,
+    "spellsKnown": 13,
+    "spellSlots": 3,
+    "spellLevel": 3
+  },
+  {
+    "level": 16,
+    "proficiencyBonus": 5,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "barrierUses": 5,
+    "barrierTicks": 6,
+    "cantrips": 4,
+    "spellsKnown": 13,
+    "spellSlots": 3,
+    "spellLevel": 3
+  },
+  {
+    "level": 17,
+    "proficiencyBonus": 6,
+    "features": [
+      "l5t_4"
+    ],
+    "barrierUses": 6,
+    "barrierTicks": 7,
+    "cantrips": 4,
+    "spellsKnown": 14,
+    "spellSlots": 4,
+    "spellLevel": 3
+  },
+  {
+    "level": 18,
+    "proficiencyBonus": 6,
+    "features": [
+      "subclass"
+    ],
+    "barrierUses": 6,
+    "barrierTicks": 7,
+    "cantrips": 4,
+    "spellsKnown": 14,
+    "spellSlots": 4,
+    "spellLevel": 3
+  },
+  {
+    "level": 19,
+    "proficiencyBonus": 6,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "barrierUses": 6,
+    "barrierTicks": 8,
+    "cantrips": 4,
+    "spellsKnown": 15,
+    "spellSlots": 4,
+    "spellLevel": 3
+  },
+  {
+    "level": 20,
+    "proficiencyBonus": 6,
+    "features": [
+      "reset"
+    ],
+    "barrierUses": 6,
+    "barrierTicks": 8,
+    "cantrips": 4,
+    "spellsKnown": 15,
+    "spellSlots": 4,
+    "spellLevel": 3
+  }
+]

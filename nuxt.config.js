@@ -16,7 +16,7 @@ fs.readdirSync(`./static/data/races`).map(file => {
   routes.push(`/phb/races/${id}`)
 })
 */
-fs.readdirSync('./static/data/changelog').map((file) => {
+fs.readdirSync('./static/data/general/changelog').map((file) => {
   routes.push('/changelog/' + (file.replace(/\.md$/g, '')))
 })
 

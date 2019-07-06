@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import stats from '~/static/data/random_height_weight'
+  import stats from '~/static/data/general/random_height_weight'
   export default {
     data () {
       return {

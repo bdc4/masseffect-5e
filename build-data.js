@@ -1,12 +1,11 @@
 /*****
  * Static Files
  */
-const langs = ['en','ru']
+const langs = ['en']
 
 const fs = require('fs')
 const fm = require('front-matter')
 const md = require('markdown-it')({html: true})
-const jsonDirs = ['classes', 'bestiary']
 const mdDirs = [
   'backgrounds',
   'rules',
@@ -21,8 +20,9 @@ const mdDirs = [
   'vehicles'
 ]
 
+
 // changelog
-const path = `./static/changelog`
+const path = `./static/data/general/changelog`
 const files = fs.readdirSync(path)
 const items = files.map((file) => {
   const fc = fm(fs.readFileSync(`${path}/${file}`, 'utf8'))
@@ -66,11 +66,20 @@ for (let lang of langs) {
 
 
 // process jsDirs
+const jsonDirs = ['classes', 'bestiary']
+
 for (let lang of langs) {
   for (let dir of jsonDirs) {
     const path = `./static/data/${lang}/${dir}`
     const files = fs.readdirSync(path)
-    let items = files.map(file => JSON.parse(fs.readFileSync(`${path}/${file}`, 'utf8')))
+    let items = files.map((file) => {
+      const item = JSON.parse(fs.readFileSync(`${path}/${file}`, 'utf8'))
+      if (dir === 'classes') {
+        const progression = JSON.parse(fs.readFileSync(`./static/data/general/progressions/${file}`, 'utf8'))
+        item.progression = progression
+      }
+      return item
+    })
     fs.writeFileSync(`${path}.json`, JSON.stringify(items, null, 2))
   }
 }

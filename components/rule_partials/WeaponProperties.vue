@@ -11,12 +11,10 @@
 </template>
 
 <script>
-  import weaponProperties from '~/static/data/weapon_properties.json'
-
   export default {
-    data () {
-      return {
-        weaponProperties
+    computed: {
+      weaponProperties() {
+        return this.$store.getters.content[this.$i18n.locale].weaponProperties
       }
     }
   }

@@ -1,0 +1,175 @@
+[
+  {
+    "level": 1,
+    "proficiencyBonus": 2,
+    "features": [
+      "drone"
+    ],
+    "barrierTicks": null,
+    "techPoints": 2,
+    "techPointLimit": 1
+  },
+  {
+    "level": 2,
+    "proficiencyBonus": 2,
+    "features": [
+      "subclass"
+    ],
+    "techPoints": 4,
+    "techPointLimit": 1
+  },
+  {
+    "level": 3,
+    "proficiencyBonus": 2,
+    "features": [
+      "engineers_efficiency"
+    ],
+    "techPoints": 5,
+    "techPointLimit": 1
+  },
+  {
+    "level": 4,
+    "proficiencyBonus": 2,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "techPoints": 7,
+    "techPointLimit": 1
+  },
+  {
+    "level": 5,
+    "proficiencyBonus": 3,
+    "features": [],
+    "techPoints": 11,
+    "techPointLimit": 2
+  },
+  {
+    "level": 6,
+    "proficiencyBonus": 3,
+    "features": [
+      "subclass"
+    ],
+    "techPoints": 13,
+    "techPointLimit": 2
+  },
+  {
+    "level": 7,
+    "proficiencyBonus": 3,
+    "features": [
+      "recharge"
+    ],
+    "techPoints": 15,
+    "techPointLimit": 2
+  },
+  {
+    "level": 8,
+    "proficiencyBonus": 3,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "techPoints": 17,
+    "techPointLimit": 2
+  },
+  {
+    "level": 9,
+    "proficiencyBonus": 4,
+    "features": [],
+    "techPoints": 20,
+    "techPointLimit": 3
+  },
+  {
+    "level": 10,
+    "proficiencyBonus": 4,
+    "features": [
+      "subclass"
+    ],
+    "techPoints": 23,
+    "techPointLimit": 3
+  },
+  {
+    "level": 11,
+    "proficiencyBonus": 4,
+    "features": [
+      "recharge_2"
+    ],
+    "techPoints": 26,
+    "techPointLimit": 3
+  },
+  {
+    "level": 12,
+    "proficiencyBonus": 4,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "techPoints": 26,
+    "techPointLimit": 3
+  },
+  {
+    "level": 13,
+    "proficiencyBonus": 5,
+    "features": [],
+    "techPoints": 30,
+    "techPointLimit": 4
+  },
+  {
+    "level": 14,
+    "proficiencyBonus": 5,
+    "features": [
+      "subclass"
+    ],
+    "techPoints": 30,
+    "techPointLimit": 4
+  },
+  {
+    "level": 15,
+    "proficiencyBonus": 5,
+    "features": [
+      "recharge_3"
+    ],
+    "techPoints": 34,
+    "techPointLimit": 4
+  },
+  {
+    "level": 16,
+    "proficiencyBonus": 5,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "techPoints": 34,
+    "techPointLimit": 4
+  },
+  {
+    "level": 17,
+    "proficiencyBonus": 6,
+    "features": [],
+    "techPoints": 39,
+    "techPointLimit": 5
+  },
+  {
+    "level": 18,
+    "proficiencyBonus": 6,
+    "features": [
+      "subclass"
+    ],
+    "techPoints": 42,
+    "techPointLimit": 5
+  },
+  {
+    "level": 19,
+    "proficiencyBonus": 6,
+    "features": [
+      "ability_score_improvement"
+    ],
+    "techPoints": 45,
+    "techPointLimit": 6
+  },
+  {
+    "level": 20,
+    "proficiencyBonus": 6,
+    "features": [
+      "invention"
+    ],
+    "techPoints": 50,
+    "techPointLimit": 6
+  }
+]

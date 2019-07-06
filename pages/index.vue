@@ -135,13 +135,17 @@
 </template>
 
 <script>
-  import recentPosts from '~/static/data/changelog.json'
   import PostCard from '~/components/cards/PostCard.vue'
 
   export default {
+    async fetch ({store}) {
+      await store.dispatch('getContent', {lang: 'general', context: 'changelog'})
+    },
     components: { PostCard },
-    data () {
-      return { alert: true, recentPosts }
+    computed: {
+      recentPosts () {
+        return this.$store.getters.content.general.changelog
+      }
     },
     head () {
       return {

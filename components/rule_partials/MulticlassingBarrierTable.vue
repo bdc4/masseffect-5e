@@ -5,18 +5,18 @@
         th Level
         th Barrier Ticks
     tbody
-      tr(v-for="level in vanguard.progression" v-bind:key="level.level")
+      tr(v-for="level in vanguardProgression" v-bind:key="level.level")
         td(data-table-key="Level") {{ level.level | ordinal }}
         td(data-table-key="Barrier Ticks") {{ level.barrierTicks }}
 </template>
 
 <script>
-  import vanguard from '~/static/data/classes/vanguard.json'
+  import vanguardProgression from '~/static/data/general/progressions/vanguard.json'
 
   export default {
     data () {
       return {
-        vanguard
+        vanguardProgression
       }
     }
   }

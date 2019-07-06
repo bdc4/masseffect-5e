@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import characterProgression from '~/static/data/character_progression.json'
+  import characterProgression from '~/static/data/general/character_progression.json'
 
   export default {
     data () {

@@ -16,7 +16,6 @@
 </template>
 
 <script>
-  import grenades from '~/static/data/grenades.json'
   import GrenadeInfo from '~/components/grenade/GrenadeInfo.vue'
   import BookmarkButton from '~/components/BookmarkButton.vue'
 
@@ -25,9 +24,9 @@
       GrenadeInfo,
       BookmarkButton
     },
-    data () {
-      return {
-        items: grenades
+    computed: {
+      items () {
+        return this.$store.getters.content[this.$i18n.locale].grenades
       }
     }
   }

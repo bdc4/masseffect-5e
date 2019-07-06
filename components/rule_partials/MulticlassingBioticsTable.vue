@@ -9,18 +9,18 @@
         th 4th
         th 5th
     tbody
-      tr(v-for="level in adept.progression" v-bind:key="level.level")
+      tr(v-for="level in adeptProgression" v-bind:key="level.level")
         td(data-table-key="Level") {{ level.level | ordinal }}
         td(v-for="(amt, key) in level.spellSlots" v-bind:key="key" v-bind:data-table-key="`${ $options.filters.ordinal(key) }`") {{ amt ? amt : '-' }}
 </template>
 
 <script>
-  import adept from '~/static/data/classes/adept.json'
+  import adeptProgression from '~/static/data/general/progressions/adept.json'
 
   export default {
     data () {
       return {
-        adept
+        adeptProgression
       }
     }
   }

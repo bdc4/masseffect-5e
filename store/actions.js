@@ -1,6 +1,6 @@
 export default {
   async getContent ({getters, commit}, {lang, context}) {
-    if (!getters.content[lang] && !getters.content[lang][context]) {
+    if (!getters.content[lang] || !getters.content[lang][context]) {
       // TODO: can this be relative after build
       const domain = getters.isDev ? 'http://localhost:3000' : 'http://localhost:8000'
       const url = `${domain}/data/${lang}/${context}.json`
@@ -34,8 +34,5 @@ export default {
   },
   setDev ({commit}, payload) {
     commit('setDev', payload)
-  },
-  setContent ({commit}, context, payload) {
-    commit('setContent', context, payload)
   }
 }

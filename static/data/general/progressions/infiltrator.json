@@ -1,0 +1,245 @@
+[
+  {
+    "level": 1,
+    "proficiencyBonus": 2,
+    "sneakAttack": "1d6",
+    "features": [
+      "tactical_cloak",
+      "expertise",
+      "sneak_attack"
+    ],
+    "tacticalCloakUses": 2,
+    "cantrips": "-",
+    "techPoints": 2,
+    "techPointLimit": 1
+  },
+  {
+    "level": 2,
+    "proficiencyBonus": 2,
+    "sneakAttack": "1d6",
+    "features": [
+      "cunning_action",
+      "combat_power"
+    ],
+    "tacticalCloakUses": 2,
+    "cantrips": 1,
+    "techPoints": 2,
+    "techPointLimit": 1
+  },
+  {
+    "level": 3,
+    "proficiencyBonus": 2,
+    "sneakAttack": "2d6",
+    "features": [
+      "subclass"
+    ],
+    "tacticalCloakUses": 2,
+    "cantrips": 1,
+    "techPoints": 3,
+    "techPointLimit": 1
+  },
+  {
+    "level": 4,
+    "proficiencyBonus": 2,
+    "sneakAttack": "2d6",
+    "features": [
+      "ability_score_improvement"
+    ],
+    "tacticalCloakUses": 2,
+    "cantrips": 1,
+    "techPoints": 4,
+    "techPointLimit": 1
+  },
+  {
+    "level": 5,
+    "proficiencyBonus": 3,
+    "sneakAttack": "3d6",
+    "features": [
+      "uncanny_dodge"
+    ],
+    "tacticalCloakUses": 2,
+    "cantrips": 1,
+    "techPoints": 6,
+    "techPointLimit": 1
+  },
+  {
+    "level": 6,
+    "proficiencyBonus": 3,
+    "sneakAttack": "3d6",
+    "features": [
+      "expertise"
+    ],
+    "tacticalCloakUses": 3,
+    "cantrips": 2,
+    "techPoints": 6,
+    "techPointLimit": 1
+  },
+  {
+    "level": 7,
+    "proficiencyBonus": 3,
+    "sneakAttack": "4d6",
+    "features": [
+      "evasion"
+    ],
+    "tacticalCloakUses": 3,
+    "cantrips": 2,
+    "techPoints": 7,
+    "techPointLimit": 1
+  },
+  {
+    "level": 8,
+    "proficiencyBonus": 3,
+    "sneakAttack": "4d6",
+    "features": [
+      "ability_score_improvement"
+    ],
+    "tacticalCloakUses": 3,
+    "cantrips": 2,
+    "techPoints": 7,
+    "techPointLimit": 1
+  },
+  {
+    "level": 9,
+    "proficiencyBonus": 4,
+    "sneakAttack": "5d6",
+    "features": [
+      "subclass"
+    ],
+    "tacticalCloakUses": 3,
+    "cantrips": 2,
+    "techPoints": 11,
+    "techPointLimit": 2
+  },
+  {
+    "level": 10,
+    "proficiencyBonus": 4,
+    "sneakAttack": "5d6",
+    "features": [
+      "ability_score_improvement"
+    ],
+    "tacticalCloakUses": 3,
+    "cantrips": 2,
+    "techPoints": 11,
+    "techPointLimit": 2
+  },
+  {
+    "level": 11,
+    "proficiencyBonus": 4,
+    "sneakAttack": "6d6",
+    "features": [
+      "reliable_talent"
+    ],
+    "tacticalCloakUses": 4,
+    "cantrips": 3,
+    "techPoints": 13,
+    "techPointLimit": 2
+  },
+  {
+    "level": 12,
+    "proficiencyBonus": 4,
+    "sneakAttack": "6d6",
+    "features": [
+      "ability_score_improvement"
+    ],
+    "tacticalCloakUses": 4,
+    "cantrips": 3,
+    "techPoints": 13,
+    "techPointLimit": 2
+  },
+  {
+    "level": 13,
+    "proficiencyBonus": 5,
+    "sneakAttack": "7d6",
+    "features": [
+      "subclass"
+    ],
+    "tacticalCloakUses": 4,
+    "cantrips": 3,
+    "techPoints": 15,
+    "techPointLimit": 2
+  },
+  {
+    "level": 14,
+    "proficiencyBonus": 5,
+    "sneakAttack": "7d6",
+    "features": [
+      "blindsense"
+    ],
+    "tacticalCloakUses": 4,
+    "cantrips": 3,
+    "techPoints": 15,
+    "techPointLimit": 2
+  },
+  {
+    "level": 15,
+    "proficiencyBonus": 5,
+    "sneakAttack": "8d6",
+    "features": [
+      "slippery_mind"
+    ],
+    "tacticalCloakUses": 4,
+    "cantrips": 3,
+    "techPoints": 17,
+    "techPointLimit": 2
+  },
+  {
+    "level": 16,
+    "proficiencyBonus": 5,
+    "sneakAttack": "8d6",
+    "features": [
+      "ability_score_improvement"
+    ],
+    "tacticalCloakUses": 4,
+    "cantrips": 4,
+    "techPoints": 17,
+    "techPointLimit": 2
+  },
+  {
+    "level": 17,
+    "proficiencyBonus": 6,
+    "sneakAttack": "9d6",
+    "features": [
+      "subclass"
+    ],
+    "tacticalCloakUses": 4,
+    "cantrips": 4,
+    "techPoints": 20,
+    "techPointLimit": 3
+  },
+  {
+    "level": 18,
+    "proficiencyBonus": 6,
+    "sneakAttack": "9d6",
+    "features": [
+      "elusive"
+    ],
+    "tacticalCloakUses": 5,
+    "cantrips": 4,
+    "techPoints": 20,
+    "techPointLimit": 3
+  },
+  {
+    "level": 19,
+    "proficiencyBonus": 6,
+    "sneakAttack": "10d6",
+    "features": [
+      "ability_score_improvement"
+    ],
+    "tacticalCloakUses": 5,
+    "cantrips": 4,
+    "techPoints": 23,
+    "techPointLimit": 3
+  },
+  {
+    "level": 20,
+    "proficiencyBonus": 6,
+    "sneakAttack": "10d6",
+    "features": [
+      "stroke_of_luck"
+    ],
+    "tacticalCloakUses": 5,
+    "cantrips": 4,
+    "techPoints": 25,
+    "techPointLimit": 3
+  }
+]

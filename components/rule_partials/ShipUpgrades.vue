@@ -10,7 +10,6 @@
 </template>
 
 <script>
-  import items from '~/static/data/ship_upgrades'
   export default {
     data () {
       return {
@@ -20,8 +19,12 @@
           { text: 'Cost', value: 'cost', sortable: true, align: 'left' },
           { text: 'Prerequisite', value: 'prerequisite', sortable: false, align: 'left' },
           { text: 'Effect', value: 'effect', sortable: false, align: 'left' }
-        ],
-        items
+        ]
+      }
+    },
+    computed: {
+      items () {
+        return this.$store.getters.content[this.$i18n.locale].shipUpgrades
       }
     }
   }
