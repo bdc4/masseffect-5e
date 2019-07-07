@@ -1,6 +1,7 @@
 const config = require('~/package.json')
 
 export default {
+  notTranslated: ['attributions','changelog','character_progression','contributors','random_height_weight','stats_by_cr'],
   bookmarks: [],
   classes: ['adept', 'engineer', 'infiltrator', 'sentinel', 'soldier', 'vanguard'],
   mobileFilterDialog: false,
@@ -25,7 +26,6 @@ export default {
     { id: 'bestiary', textColor: 'primary--text', color: 'primary', icon: 'pets' }
   ],
   version: config.version,
-  changelog: [],
   isDev: true,
   lang: 'en',
   content: {}

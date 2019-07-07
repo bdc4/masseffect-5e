@@ -22,9 +22,14 @@ export default {
   phbSearch: state => state.phbSearch,
   searchFilters: state => state.searchFilters,
   isDev: state => state.isDev,
+  domain: (state, getters) => {
+    // TODO: can this be relative after build?
+    return getters.isDev ? 'http://localhost:3000' : 'http://localhost:8000'
+  },
   content: state => state.content,
   lang: state => state.lang,
   getContent: (state, getters) => (context, id) => {
+    // TODO: need to solve how to get lang on load without switcher
     if (Array.isArray(state.content[getters.lang][context])) {
       return state.content[getters.lang][context].find(c => c.id === id)
     }
