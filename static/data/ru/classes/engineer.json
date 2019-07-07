@@ -1,0 +1,164 @@
+{
+  "id": "engineer",
+  "name": "Engineer",
+  "description": "The Engineer is a tech specialist, able to quickly and easily manipulate the environment with specific talents, and repair or modify technical equipment. Gameplay focus is on shaping the battlefield during combat, healing the party, and debuffing enemies (disabling weapons and lowering shields).\n",
+  "snippet": "Engineers are tech specialists, the only class able to employ combat drones on the battlefield.\n",
+  "primaryAbility": "Intelligence",
+  "hitDie": 8,
+  "minHitDieRoll": 5,
+  "armorProficiencies": [
+    "Light",
+    "Medium"
+  ],
+  "weaponProficiencyChoices": 1,
+  "weaponProficiencies": {
+    "required": [
+      "Heavy Pistols"
+    ],
+    "optional": [
+      "Assault Rifles",
+      "Melee",
+      "SMGs"
+    ]
+  },
+  "savingThrows": [
+    "Constitution",
+    "Intelligence"
+  ],
+  "skillChoices": 3,
+  "skillProficiencies": [
+    "Athletics",
+    "Electronics",
+    "Engineering",
+    "History",
+    "Investigation",
+    "Medicine",
+    "Science",
+    "Vehicle Handling"
+  ],
+  "startingRangedWeaponChoices": 1,
+  "startingRangedWeapons": [
+    "M-3 Predator",
+    "M-4 Shuriken",
+    "M-8 Avenger"
+  ],
+  "startingMeleeWeaponChoices": 1,
+  "startingMeleeWeapons": [
+    "Omni-Taser",
+    "Omni-Blade",
+    "Omni-Torch"
+  ],
+  "startingArmor": [
+    "Stock Light Armor",
+    "Stock Medium Armor"
+  ],
+  "progressionHeaders": [
+    {
+      "title": "Level"
+    },
+    {
+      "title": "Proficiency Bonus"
+    },
+    {
+      "title": "Features"
+    },
+    {
+      "title": "Tech Points"
+    },
+    {
+      "title": "Tech Point Limit"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Mastermind",
+      "description": "Masterminds are highly-intellectual and skilled individuals, using strategy and perfectly timed attacks to win in battle.",
+      "features": [
+        [
+          "enfilade",
+          "jack_of_all_trades"
+        ],
+        [
+          "extra_attack_1"
+        ],
+        [
+          "disrupting_attack"
+        ],
+        [
+          "tactical_advantage"
+        ],
+        [
+          "spell_steal"
+        ]
+      ]
+    },
+    {
+      "name": "Drone Jockey",
+      "description": "A drone jockey forms a bond with their mechanical companion, giving it a body, name and increasing its potency on the battlefield.",
+      "features": [
+        [
+          "drone_companion",
+          "drones_bond"
+        ],
+        [
+          "coordinated_attack"
+        ],
+        [
+          "drones_defense_1"
+        ],
+        [
+          "assault_protocol"
+        ],
+        [
+          "drones_defense_2"
+        ]
+      ]
+    },
+    {
+      "name": "Medic",
+      "description": "The name says it all. As a medic, you'll be one on the field that can dress a wound and get your comrades back into fighting shape.",
+      "features": [
+        [
+          "repair_drone_1"
+        ],
+        [
+          "medi-gel_enhancements"
+        ],
+        [
+          "shield_boost"
+        ],
+        [
+          "repair_drone_2"
+        ],
+        [
+          "supply_pylon"
+        ]
+      ]
+    },
+    {
+      "name": "Demolisher",
+      "source": "v0.8.4",
+      "description": "Demolishers are explosive specialists with an eye for combat. While not as skilled as a Soldier or Infiltrator, they make up for it with by covering the battlefield with grenades and heavy weapon fire.",
+      "features": [
+        [
+          "advanced_weapon_holsters",
+          "zz_weapon_training"
+        ],
+        [
+          "makeshift_grenades_1",
+          "extra_attack_1"
+        ],
+        [
+          "heavy_weapon_hack",
+          "fighting_style"
+        ],
+        [
+          "makeshift_grenades_2"
+        ],
+        [
+          "paint_by_number"
+        ]
+      ]
+    }
+  ]
+}

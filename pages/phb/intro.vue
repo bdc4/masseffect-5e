@@ -8,10 +8,10 @@
         alt="Mass Effect 5e logo"
         id="phbLogo"
       ).mb-4
-      h3.display-3.hidden-sm-and-down Player's Manual - Introduction
+      h3.display-3.hidden-sm-and-down {{ $t('intro.welcome') }}
       p.title v{{ version }}
-      v-btn(to="/changelog" nuxt).primary Changelog
-      v-btn(to="/contributing" nuxt).primary.ml-2 Feedback
+      v-btn(to="/changelog" nuxt).primary {{ $t('nav.changelog') }}
+      v-btn(to="/contributing" nuxt).primary.ml-2 {{ $t('nav.feedback') }}
     div(v-for="(rule, index) in rules" v-bind:key="index")
       rule-card(:id="rule.id")
 </template>
@@ -31,7 +31,10 @@
         pages: 'pages'
       }),
       rules () {
-        return this.$store.getters.content.rules.filter(rule => rule.section === this.pages[this.$route.name].rules)
+        const route = this.$route.name.replace(/___\w{2}/, '')
+        console.log(route)
+        console.log(this.$store.getters.content[this.$i18n.locale].rules)
+        return this.$store.getters.content[this.$i18n.locale].rules.filter(rule => rule.section === this.pages[route].rules)
       }
     },
     head () {

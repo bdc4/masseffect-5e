@@ -1,0 +1,154 @@
+{
+  "id": "vanguard",
+  "name": "Vanguard",
+  "description": "Vanguards are feared for their high-risk high-reward combat style, closing quickly on enemies and destroying them at close range with weapons and biotic abilities. They are outfitted with L5n implants, enabling them to perform a biotic charge that strikes the opponent with incredible force while closing distance.\n",
+  "snippet": "Vanguards have a high-risk high-reward combat style, using biotics and melee strikes.\n",
+  "primaryAbility": "Strength or Wisdom",
+  "hitDie": 12,
+  "minHitDieRoll": 7,
+  "armorProficiencies": [
+    "Light",
+    "Medium"
+  ],
+  "weaponProficiencyChoices": 1,
+  "weaponProficiencies": {
+    "required": [
+      "Heavy Pistols",
+      "Melee"
+    ],
+    "optional": [
+      "Shotguns",
+      "SMGs"
+    ]
+  },
+  "savingThrows": [
+    "Strength",
+    "Wisdom"
+  ],
+  "skillChoices": 3,
+  "skillProficiencies": [
+    "Acrobatics",
+    "Athletics",
+    "Deception",
+    "Insight",
+    "Intimidation",
+    "Performance",
+    "Persuasion",
+    "Sleight of Hand",
+    "Survival"
+  ],
+  "startingRangedWeaponChoices": 1,
+  "startingRangedWeapons": [
+    "M-3 Predator",
+    "M-4 Shuriken",
+    "M-23 Katana"
+  ],
+  "startingMeleeWeaponChoices": 1,
+  "startingMeleeWeapons": [
+    "Omni-Blade",
+    "Omni-Hammer",
+    "Monomolecular Blade",
+    "Riot Shield"
+  ],
+  "startingArmor": [
+    "Stock Light Armor",
+    "Stock Medium Armor"
+  ],
+  "progressionHeaders": [
+    {
+      "title": "Level"
+    },
+    {
+      "title": "Proficiency Bonus"
+    },
+    {
+      "title": "Features"
+    },
+    {
+      "title": "Barrier Uses"
+    },
+    {
+      "title": "Barrier Ticks"
+    },
+    {
+      "title": "Cantrips"
+    },
+    {
+      "title": "Spells Known"
+    }
+  ],
+  "spellSlots": true,
+  "maxSpellSlot": 3,
+  "subclasses": [
+    {
+      "name": "Battle Master",
+      "description": "Battle masters use their barrier to execute unique maneuvers on the battlefield, controlling and harrying enemy forces.",
+      "features": [
+        [
+          "biotic_maneuvers_1"
+        ],
+        [
+          "biotic_focus"
+        ],
+        [
+          "improved_barrier_1",
+          "biotic_maneuvers_2"
+        ],
+        [
+          "biotic_maneuvers_2",
+          "extra_attack_2"
+        ],
+        [
+          "improved_barrier_2",
+          "opportunist"
+        ]
+      ]
+    },
+    {
+      "name": "Shock Trooper",
+      "description": "Shock troopers like to fight up close and personal, using charge to dash around the battlefield and ripping enemies apart with shotgun blasts.",
+      "features": [
+        [
+          "biotic_bull_rush"
+        ],
+        [
+          "stunning_strike"
+        ],
+        [
+          "shotgun_savvy",
+          "onslaught"
+        ],
+        [
+          "a_touch_of_force"
+        ],
+        [
+          "blitz"
+        ]
+      ]
+    },
+    {
+      "name": "Nemesis",
+      "description": "Nemesis vanguards prefer distance and using biotic powers. While they lack the raw power of an adept, they're more crafty and harder to take down.",
+      "features": [
+        [
+          "biotic_recovery_nemesis",
+          "metabiotics_1"
+        ],
+        [
+          "biotic_attacks"
+        ],
+        [
+          "metabiotics_2",
+          "biotic_fury"
+        ],
+        [
+          "teleporting_dodge",
+          "metabiotics_2"
+        ],
+        [
+          "bombardment"
+        ]
+      ]
+    }
+  ]
+}

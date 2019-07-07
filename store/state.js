@@ -27,5 +27,6 @@ export default {
   version: config.version,
   changelog: [],
   isDev: true,
+  lang: 'en',
   content: {}
 }

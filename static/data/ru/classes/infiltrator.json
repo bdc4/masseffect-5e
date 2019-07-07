@@ -1,0 +1,182 @@
+{
+  "id": "infiltrator",
+  "name": "Infiltrator",
+  "description": "The Infiltrator is a tech-savvy warrior, able to win battles by quickly disabling and killing enemies. These soldiers focus on unlocking alternate routes, gaining access to good equipment, and obtaining an advantageous position over enemies in combat.\n",
+  "snippet": "Infiltrators are tech and combat specialists with the unique ability to cloak themselves.\n",
+  "primaryAbility": "Dexterity",
+  "hitDie": 8,
+  "minHitDieRoll": 5,
+  "armorProficiencies": [
+    "Light"
+  ],
+  "weaponProficiencyChoices": 2,
+  "weaponProficiencies": {
+    "required": [
+      "Heavy Pistols"
+    ],
+    "optional": [
+      "Assault Rifles",
+      "Melee",
+      "SMGs",
+      "Sniper Rifles"
+    ]
+  },
+  "savingThrows": [
+    "Dexterity",
+    "Intelligence"
+  ],
+  "skillChoices": 3,
+  "skillProficiencies": [
+    "Athletics",
+    "Acrobatics",
+    "Deception",
+    "Electronics",
+    "History",
+    "Insight",
+    "Investigation",
+    "Perception",
+    "Persuasion",
+    "Sleight of Hand",
+    "Stealth",
+    "Vehicle Handling"
+  ],
+  "startingRangedWeaponChoices": 1,
+  "startingRangedWeapons": [
+    "M-3 Predator",
+    "M-4 Shuriken",
+    "M-92 Mantis"
+  ],
+  "startingMeleeWeaponChoices": 1,
+  "startingMeleeWeapons": [
+    "Omni-Taser",
+    "Omni-Blade",
+    "Monomolecular Blade"
+  ],
+  "startingArmor": [
+    "Stock Light Armor"
+  ],
+  "progressionHeaders": [
+    {
+      "title": "Level"
+    },
+    {
+      "title": "Proficiency Bonus"
+    },
+    {
+      "title": "Sneak Attack Damage",
+      "key": "sneakAttack"
+    },
+    {
+      "title": "Features"
+    },
+    {
+      "title": "Tactical Cloak Uses"
+    },
+    {
+      "title": "Combat Powers",
+      "key": "cantrips"
+    },
+    {
+      "title": "Tech Points"
+    },
+    {
+      "title": "Tech Point Limit"
+    }
+  ],
+  "subclasses": [
+    {
+      "name": "Shadow",
+      "description": "Shadow Infiltrators are melee specialists that make heavy use of their tactical cloak and stealth to close the distance between themselves and their target.",
+      "features": [
+        [
+          "up_close_and_personal"
+        ],
+        [
+          "silent_cloak",
+          "melee_prowess"
+        ],
+        [
+          "shadow_strike"
+        ],
+        [
+          "death_strike"
+        ]
+      ]
+    },
+    {
+      "name": "Sniper",
+      "description": "Snipers are ranged specialists that have an affinity for sniper rifles.",
+      "features": [
+        [
+          "steady_aim"
+        ],
+        [
+          "careful_eyes"
+        ],
+        [
+          "overwatch"
+        ],
+        [
+          "killshot"
+        ]
+      ]
+    },
+    {
+      "name": "Saboteur",
+      "description": "Saboteurs are tech savvy infiltrators that use cloak and dagger tactics to control the outcome of battles.",
+      "features": [
+        [
+          "saboteurs_touch",
+          "combat_heuristics"
+        ],
+        [
+          "tactical_ambush"
+        ],
+        [
+          "misdirection"
+        ],
+        [
+          "saboteurs_reflexes"
+        ]
+      ]
+    },
+    {
+      "name": "Saboteur",
+      "source": "v0.8.4",
+      "description": "Saboteurs are infiltration experts. They use a sharp mind to subtly affect the outcome of battles.",
+      "features": [
+        [
+          "zz_insightful_fighting"
+        ],
+        [
+          "zz_infiltration"
+        ],
+        [
+          "zz_saboteurs_touch"
+        ],
+        [
+          "zz_eye_for_weakness"
+        ]
+      ]
+    },
+    {
+      "name": "Operative",
+      "source": "v0.8.4",
+      "description": "Operatives are ranged specialists that rely on gunplay and a keen eye to take out enemies from a distance.",
+      "features": [
+        [
+          "zz_dropshot"
+        ],
+        [
+          "zz_deadeye"
+        ],
+        [
+          "zz_combat_heuristics"
+        ],
+        [
+          "zz_killshot"
+        ]
+      ]
+    }
+  ]
+}

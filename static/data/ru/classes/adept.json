@@ -1,0 +1,131 @@
+{
+  "id": "adept",
+  "name": "Adept",
+  "description": "Adepts are biotic specialists, capable of disabling and killing enemies with raw biotic power. While they lack advanced combat training, they are the best at defeating enemies without firing a shot. They are outfitted with L5x implants that can spawn a micro-singularity, damaging enemies and pulling them into the air.",
+  "snippet": "The Adept is the ultimate biotic, able to affect the physical world with the power of the mind.",
+  "primaryAbility": "Wisdom",
+  "hitDie": 6,
+  "minHitDieRoll": 4,
+  "armorProficiencies": [
+    "Light"
+  ],
+  "weaponProficiencyChoices": 1,
+  "weaponProficiencies": {
+    "required": [
+      "Heavy Pistols"
+    ],
+    "optional": [
+      "Melee",
+      "SMGs"
+    ]
+  },
+  "savingThrows": [
+    "Charisma",
+    "Wisdom"
+  ],
+  "skillChoices": 3,
+  "skillProficiencies": [
+    "Acrobatics",
+    "Deception",
+    "History",
+    "Insight",
+    "Intimidation",
+    "Performance",
+    "Sleight of hand",
+    "Survival"
+  ],
+  "startingRangedWeaponChoices": 1,
+  "startingRangedWeapons": [
+    "M-3 Predator",
+    "M-4 Shuriken"
+  ],
+  "startingMeleeWeaponChoices": 1,
+  "startingMeleeWeapons": [
+    "Omni-Blade",
+    "Monomolecular Blade"
+  ],
+  "startingArmor": [
+    "Stock Light Armor"
+  ],
+  "progressionHeaders": [
+    {
+      "title": "Level"
+    },
+    {
+      "title": "Proficiency Bonus"
+    },
+    {
+      "title": "Features"
+    },
+    {
+      "title": "Barrier Uses"
+    },
+    {
+      "title": "Barrier Ticks"
+    },
+    {
+      "title": "Cantrips"
+    },
+    {
+      "title": "Spells Known"
+    }
+  ],
+  "spellSlots": true,
+  "maxSpellSlot": 5,
+  "subclasses": [
+    {
+      "name": "Commando",
+      "description": "Commandos don't need heavy weapons because they ARE the heavy weapon. Their features improve both the damage potential and throughput of their biotic spells, making them a deadly force.",
+      "features": [
+        [
+          "pure_biotics"
+        ],
+        [
+          "expert_biotic"
+        ],
+        [
+          "biotic_split"
+        ],
+        [
+          "overchannel"
+        ]
+      ]
+    },
+    {
+      "name": "Blackstar",
+      "description": "Blackstars prefer controlling the battlefield over raw power. They can shape their biotic powers to avoid hurting friends and gain unique benefits to biotic control spells like Life, Singularity, and Stasis.",
+      "features": [
+        [
+          "sculpt_biotics"
+        ],
+        [
+          "bend_luck"
+        ],
+        [
+          "focused_biotics"
+        ],
+        [
+          "biotic_control"
+        ]
+      ]
+    },
+    {
+      "name": "Disruptor",
+      "description": "Disruptors have learned to tap into dark energy, improving biotic abilities that tear apart their adversaries from within. They also specialize in maintaining spells with intense focus.",
+      "features": [
+        [
+          "dark_biotics"
+        ],
+        [
+          "biotic_surge"
+        ],
+        [
+          "potent_biotics"
+        ],
+        [
+          "biotic_concentration"
+        ]
+      ]
+    }
+  ]
+}

@@ -19,7 +19,7 @@
     section
       v-container(grid-list-xl)
         v-layout(row wrap justify-space-around)
-          v-flex(xs12 md3 d-flex v-for="m in missions" v-bind:key="m.name" )
+          v-flex(xs12 sm6 xl3 d-flex v-for="m in missions" v-bind:key="m.name" )
             v-card
               v-container(grid-list-sm)
                 v-layout

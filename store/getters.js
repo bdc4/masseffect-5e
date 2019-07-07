@@ -23,10 +23,10 @@ export default {
   searchFilters: state => state.searchFilters,
   isDev: state => state.isDev,
   content: state => state.content,
+  lang: state => state.lang,
   getContent: (state, getters) => (context, id) => {
-    // TODO: if content doesn't exist, get from english and add translate tag
-    if (Array.isArray(state.content[context])) {
-      return state.content[context].find(c => c.id === id)
+    if (Array.isArray(state.content[getters.lang][context])) {
+      return state.content[getters.lang][context].find(c => c.id === id)
     }
   }
 }

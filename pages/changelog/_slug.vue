@@ -14,7 +14,7 @@
 <script>
   export default {
     async fetch ({store}) {
-      await store.dispatch('getContent', {context: 'changelog'})
+      await store.dispatch('getContent', {lang: 'general', context: 'changelog'})
     },
     data () {
       return {
@@ -23,7 +23,7 @@
     },
     computed: {
       post () {
-        return this.$store.getters.getContent('changelog', this.id)
+        return this.$store.getters.content.general.changelog.find(chlg => chlg.id === this.id)
       }
     },
     head () {

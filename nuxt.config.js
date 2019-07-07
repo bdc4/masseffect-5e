@@ -79,7 +79,8 @@ module.exports = {
     { src: '@/plugins/persistentState.js', ssr: false },
     '@/plugins/filters/index.js',
     '@/plugins/vue2-filters',
-    '@/plugins/globals'
+    '@/plugins/globals',
+    { src: '~plugins/i18n.js' }
   ],
   /*
   ** Nuxt.js modules
@@ -92,11 +93,35 @@ module.exports = {
     'nuxt-i18n'
   ],
   i18n: {
-    locales: ['en', 'ru'],
+    locales: [
+      {
+        code: 'en',
+        file: 'en.js'
+      },
+      {
+        code: 'ru',
+        file: 'ru.js'
+      }
+    ],
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en'
-    }
+    },
+    parsePages: false,
+    pages: {
+      about: false,
+      assets: false,
+      contributing: false,
+      index: false,
+      license: false,
+      missions: false,
+      changelog: {
+        _slug: false,
+        index: false
+      }
+    },
+    lazy: true,
+    langDir: 'lang/'
   },
   'google-analytics': {
     id: 'UA-83740704-2',

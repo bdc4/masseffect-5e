@@ -13,12 +13,12 @@
 
   export default {
     async fetch ({store}) {
-      await store.dispatch('getContent', {context: 'changelog'})
+      await store.dispatch('getContent', {lang: 'general', context: 'changelog'})
     },
     components: { PostCard },
     computed: {
       items () {
-        return this.$store.getters.content.changelog
+        return this.$store.getters.content.general.changelog
       }
     },
     head () {
